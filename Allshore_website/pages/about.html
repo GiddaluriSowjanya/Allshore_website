@@ -6,6 +6,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap Icons (optional, if needed) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS (optional, if needed) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,13 +73,13 @@
             <div>
                 <div class="container">
                     <div class="row">
-                        <div class="text-center col-12 mb-5">
+                        <div class="text-center col-12 mb-4">
                             <h1 class="aboutUs-heading">About Us</h1>
                             <h4 class="aboutUs-heading2">Our Story</h4>
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-12">
-                                <div class="aboutUs-card-para">
+                                <div class="aboutUs-card-para shadow p-4">
                                     <p>Founded by like minded technologies thathad their fair share of problems in 
                                         recruiting the best talent to execute on their business problems, Allshore 
                                         technologies is a technology and talent management company that emphasizes on
@@ -103,69 +108,81 @@
     </div>
     <!--About Us-->
 
-    <!--Our Engagement-->
-    <div>
-        <div class="bg-engagement">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 mt-4 mb-5">
-                        <h1 class="engagement-heading">Our Engagement</h1>
-                        <p class="engagement-para">No matter what your needs are, we have a model that suits you:</p>
-                    </div>
+
+    <!--our engagement -->
+    <div class="bg-engagement mb-5 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="engagement-main-heading">Our Engagement</h2>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 col-12 col-lg-4 mb-4">
-                        <div class="engagement-card p-3 shadow d-flex flex-row">
-                            <img src="../Assets/Images/managed.png" class="engagement-logo-image mr-3"/>
-                            <div>
-                                <h1 class="engagement-card-heading">Managed Services</h1>
-                                <p class="engagement-card-para">In this model, Allshore takes full responsibility for managing the client's IT staffing needs. This includes sourcing, recruiting, onboarding, training, and managing the IT professionals. This model provides a turnkey solution for clients that need to manage their IT staffing needs but do not have the resources or expertise to do so.</p>
+                    <div class="col-md-4 mb-2 col-12">
+                        <div class="engagement-card p-2">
+                            <div class="engagement-icon-wrapper">
+                                <i class="bi bi-archive-fill"></i>
                             </div>
+                            <h2 class="engagement-card-heading">Managed Services</h2>
+                            <p class="engagement-card-para">In this model, Allshore takes full responsibility for 
+                                managing the client's IT staffing needs. This includes 
+                                sourcing, recruiting, onboarding, training, and managing 
+                                the IT professionals. This model provides a turnkey solution 
+                                for clients that need to manage their IT staffing needs but 
+                                do not have the resources or expertise to do so.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 col-lg-4 mb-4">
-                        <div class="engagement-card p-3 shadow d-flex flex-row">
-                            <img src="../Assets/Images/teamwork.png" class="engagement-logo-image mr-3"/>
-                            <div>
-                                <h1 class="engagement-card-heading">Project-based/Staffing Augmentation</h1>
-                                <p class="engagement-card-para">In this model, clients engage Allshore professionals to work on a specific project or set of projects. This model provides flexibility and allows clients to manage their costs effectively.</p>
+                    <div class="col-md-4 mb-2 col-12">
+                        <div class="engagement-card p-2">
+                            <div class="engagement-icon-wrapper">
+                                <i class="bi bi-person-fill-gear"></i>
                             </div>
+                            <h2 class="engagement-card-heading">Project-based/staff Augmentation</h2>
+                            <p class="engagement-card-para">In this model, clients engage Allshore professionals to
+                                 work on a specific project or set of projects. This model provides flexibility 
+                                 and allows clients to manage their costs effectively</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 col-lg-4 mb-4">
-                        <div class="engagement-card p-3 shadow d-flex flex-row">
-                            <img src="../Assets/Images/job.png" class="engagement-logo-image mr-3"/>
-                            <div>
-                                <h1 class="engagement-card-heading">Contract Staffing</h1>
-                                <p class="engagement-card-para">In this model, clients engage Allshore professionals on a contractual basis for a specific period, which can range from a few months to several years. This model is ideal for companies that need IT professionals for specific projects or short-term assignments.</p>
+                    <div class="col-md-4 mb-2 col-12">
+                        <div class="engagement-card p-2">
+                            <div class="engagement-icon-wrapper">
+                                <i class="bi bi-person-fill"></i>
                             </div>
+                            <h2 class="engagement-card-heading">Contract Staffing</h2>
+                            <p class="engagement-card-para">In this model, clients engage Allshore professionals 
+                                on a contractual basis for a specific period, which can range from a few months 
+                                to several years. This model is ideal for companies that need IT professionals for 
+                                specific projects or short-term assignments.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 col-lg-4 mb-4">
-                        <div class="engagement-card p-3 shadow d-flex flex-row">
-                            <img src="../Assets/Images/agreement.png" class="engagement-logo-image mr-3"/>
-                            <div>
-                                <h1 class="engagement-card-heading">Contract-to-Hire</h1>
-                                <p class="engagement-card-para">In this model, clients engage Allshore to provide resources on a contract basis with the intention of hiring them as full-time employees at the end of the contract period. This model allows clients to evaluate the IT professionals' skills and fit with the company culture before making a long-term commitment.</p>
+                    <div class="col-md-4 mb-2 col-12">
+                        <div class="engagement-card p-2">
+                            <div class="engagement-icon-wrapper">
+                                <i class="bi bi-ui-checks"></i>
                             </div>
+                            <h2 class="engagement-card-heading">Contract-to-Hire</h2>
+                            <p class="engagement-card-para">In this model, clients engage Allshore to provide resources on a 
+                                contract basis with the intention of hiring them as full-time employees at the end of the contract period. 
+                                This model allows clients to evaluate the IT professionals' skills and fit with the company culture before 
+                                making a long-term commitment</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12 col-lg-4 mb-4">
-                        <div class="engagement-card p-3 shadow d-flex flex-row">
-                            <img src="../Assets/Images/box.png" class="engagement-logo-image mr-3"/>
-                            <div>
-                                <h1 class="engagement-card-heading">Direct Placement</h1>
-                                <p class="engagement-card-para">In this model, Allshore recruits IT professionals for clients to fill permanent positions. Allshore charges a one-time fee for the service. This model is ideal for clients that need to hire IT professionals for permanent positions but do not have the resources or expertise to recruit them.</p>
+                    <div class="col-md-4 mb-2 col-12">
+                        <div class="engagement-card p-2">
+                            <div class="engagement-icon-wrapper">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
                             </div>
+                            <h2 class="engagement-card-heading">Direct Placement</h2>
+                            <p class="engagement-card-para">In this model, Allshore recruits IT professionals for clients to fill permanent positions. Allshore charges a one-time fee for the service. This model is ideal for clients that need to hire IT professionals for permanent positions but do not have the resources or expertise to recruit them</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-        
     </div>
+    
 
-    <!--Our Engagement-->
+    <!--our engagement -->
 
     <!--footer section-->
     <footer>

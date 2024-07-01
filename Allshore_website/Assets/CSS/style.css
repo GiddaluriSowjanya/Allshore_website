@@ -8,6 +8,9 @@ body {
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none !important;
+}
 /* navbar section */
 
 #customItem1, #customItem2, #customItem3, #customItem4, #customItem5{
@@ -29,169 +32,257 @@ body {
 /* navbar section */
 
 /* banner section */
-.bg-banner{
-    background-image: url("../Images/group-young-people-casual-clothes-working-modern-office.jpg");
+
+.carousel-item{
     height: 100vh;
-    width: 100%;
-    background-position: center;
-    position: relative;
-    background-repeat: no-repeat;
-    display: flex;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
     background-size: cover;
 }
-.bg-banner-overlay{
-    background: rgba(11, 9, 9, 0.548);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
+.carousel-caption{
+    bottom: 270px;
 }
-.banner-section-heading{
-    color: #FFFFFF;
-    font-size: 50px;
+.carousel-caption h5{
+    font-size: 40px;
 }
-.banner-section-paragraph{
-    color: #FFFFFF;
+.carousel-caption p{
     font-size: 20px;
 }
+@media (max-width: 992px){
+    .carousel-item{
+        height: 100%;
+    }
+    .carousel-caption{
+        bottom: 200px;
+    }
+    .carousel-caption h5{
+        font-size: 35px;
+    }
+    .carousel-caption p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    .carousel-item{
+        height: 100%;
+    }
+    .carousel-caption{
+        bottom: 130px;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px){
+    .carousel-item{
+        height: 100%;
+    }
+    .carousel-caption{
+        bottom: 70px;
+    }
+    .carousel-caption h5{
+        font-size: 24px;
+    }
+    .carousel-caption p{
+        font-size: 14px;
+    }
+}
+    
 /* banner section */
 
-/* whyUs section */
 
-.bg-whyUs{
+/*  why choose us section*/
+.about-allshore{
     background-color: #FFFFFF;
-
 }
-.whyUs-card-circle{
-    background-color: #c9dfdc;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    position: relative;
+.allshore-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
 }
-.whyUs-card-content{
-    position: absolute;
-    width: inherit;
-    height: auto;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
+.allshore-content{
+    flex:1;
+    width: 600px;
+    margin: 0px 25px;
 }
-.whyUs-heading{
+.allshore-content-heading{
     font-size: 40px;
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
-    margin-top: 30px;
 }
-.whyUs-card-heading{
-    color: #E20202;
-    font-size: 30px;
+.her-content-para{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
 }
-.whyUs-card-para{
-    font-size: 16px;
-}
-.whyUs-card-image{
-    height: 500px;
-    width: 500px;
-}
-button.main-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #FFFFFF;
-    background-color: #e66060; 
-    border: none;
-    border-radius: 5px;
+.allshore-btn{
+    background: linear-gradient(to right, #ff0000, #0000ff);
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    z-index: 0;
-    outline: none;
+    height: 40px;
+    width: 140px;
+    background-size: 200% 100%;
+    border-width: 0;
+    transition: background-postion 0.4s ease-in-out;
+    text-decoration: none;
 }
-.main-button a{
-    color: #FFFFFF;
+.allshore-btn:hover{
+    background-position: right;
     text-decoration: none;
 }
 
-/* Glow effect */
-button.main-button:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    background: rgba(217, 36, 60, 0.481);
-    z-index: -1;
-    filter: blur(15px);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
 
-button.main-button:hover:before {
-    opacity: 1;
+.allshore-image{
+    flex:1;
+    width: 600px;
+    margin: auto;
 }
-
-button.main-button:active {
-    transform: scale(0.95);
+.allshore-image img{
+    width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px){
+    .about-allshore{
+        margin: 0px;
+    }
+    .allshore-container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .allshore-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .allshore-content-heading{
+        font-size: 30px;
+    }
+    .allshore-content-para{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .allshore-btn{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .allshore-image{
+        width: 100%;
+    }
 }
 /* whyUs section */
 
 /* Our services */
-.bg-services{
-    background-color: #FFFFFF;
-
-}
 .services-heading{
+    text-align: center;
     font-size: 40px;
     color: #e7a324;
-    margin-top: 30px;
     text-shadow: 2px 2px 0 #008B74;
 }
-.services-heading2{
-    font-size: 45px;
+.services-para{
+    font-size: 35px;
 }
-.bg-services-card{
-    background-color: #FFFFFF;
+.single-service{
+    background: #212121;
+    padding: 30px;
+    transition: all 0.9s ease 0s;
 }
-.bg-services-card-heading{
-    font-size: 25px;
+.services-card-icon{
+    color: #212121;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration-line: none;
+    
 }
-.bg-services-card-para{
+.services-card-icon a{
+    color: #212121;
+    text-decoration: none;
     font-size: 16px;
 }
-.services-card-image{
-    height: 80px;
-    width: 80px;
+.services-card-heading{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
 }
+.services-card-para{
+    font-size: 16px;
+    color: #fff;
+}
+
+.services-icon :hover{
+    font-size: 120px;
+    transition: 0.9s;
+    color: #fff;
+}
+.single-service:hover{
+    background: tomato;
+}
+
 /* Our services */
 
+
 /* Our clients */
-.bg-clients{
-    background-color: #FFFFFF;
+.client-bg {
+    background: #FFFFFF;
+    margin-bottom: 30px;
 }
-.clients-heading{
+.slider-area h2 {
     font-size: 40px;
     color: #e7a324;
     margin-top: 30px;
     text-shadow: 2px 2px 0 #008B74;
-}
-.clients-para{
-    font-size:45px;
-}
-.bg-card-clients{
-    border: solid;
-    border-width: 1px;
     text-align: center;
-    padding: 15px;
+
 }
 .client-logo-image{
-    width: 100px;
-    height: 70px;
+    width: 170px;
+    height: 90px;
 }
-
+.wrapper-clients {
+    
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    border-radius: 180px;
+    padding: 2.5rem;
+    background: #FFFFFF;
+    
+}
+.client-item {
+    animation: animate 20s alternate linear infinite;
+}
+.wrapper-clients:hover .client-item {
+    animation-play-state: paused;
+}
+@keyframes animate {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1100%, 0, 0);
+    }
+}
+@media (max-width: 767px) {
+    .slider-area h2 {
+        font-size: 30px;
+    }
+    .wrapper-clients {
+        width: 95%;
+        border-radius: 0;
+        padding: 0;
+    }
+}
 /* Our clients */
+
 
 /* footer section */
 .bg-footer {
@@ -258,8 +349,8 @@ button.main-button:active {
 
 /* About section */
 .about-logo-image{
-    height: 300px;
-    width: 500px;
+    height: 250px;
+    width: 100%;
     margin-top: 30px;
     
 }
@@ -289,37 +380,87 @@ button.main-button:active {
 }
 .aboutUs-card-para{
     font-size: 18px;
-    margin-right: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
 }
 /* About Section */
 
-/*Engagement section*/
-.bg-engagement{
-    background-color: #FFFFFF;
-}
-.engagement-heading{
+
+/*Engagement section */
+
+
+.engagement-main-heading {
     font-size: 40px;
     color: #e7a324;
     margin-top: 30px;
     text-shadow: 2px 2px 0 #008B74;
 }
+
+.engagement-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+}
+
+.engagement-card {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+.engagement-heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+}
 .engagement-para{
-    font-size: 35px;
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
 }
-.engagement-card{
-    background-color: #FFFFFF;
+.engagement-icon-wrapper{
+    background-color: #2c7bfe;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
 }
-.engagement-card-heading{
-    font-size: 25px;
+.engagement-card:hover{
+    background-position: 0 100%;
 }
-.engagement-card-para{
-    font-size: 16px;
+.engagement-card:hover .engagement-icon-wrapper{
+    background-color: #ffffff;
+    color: #2c7bfe;
 }
-.engagement-logo-image{
-    height: 80px;
-    width: 80px;
+
+.engagement-heading:hover{
+    color: #ffffff;
 }
-/*Engagement section */
+.engagement-para:hover{
+    color: #ffffff;
+}
+
+
+
+/* Our Engagement */
+
+
 
 /* About Us */
 
@@ -327,7 +468,7 @@ button.main-button:active {
 
 /* banner all services section */
 .bg-banner-services-section{
-    background-image: url("../Images/abstract-geometric-wireframe-background/5153829.jpg");
+    background-image: url("../Images/5153829.jpg");
     height: 50vh;
     width: 100vw;
     background-size: cover;
@@ -347,10 +488,8 @@ button.main-button:active {
 /* banner all services section */
 
 /* About Product Engineering */
-
-
 .bg-sub-product-eng{
-    background: url("../Images/website-hosting-concept-with-bright-light.jpg");
+    background: url("../Images/website-hosting-concept-with-bright-light\ \(1\).jpg");
     background-size: 55%;
     background-color: #fdfdfd;
     overflow: hidden;
@@ -402,55 +541,150 @@ button.main-button:active {
     background-color: #FFFFFF;
 }
 .bg-product-services-heading{
-    font-size: 35px;
+    font-size: 40px;
+    color: #e7a324;
+    text-shadow: 2px 2px 0 #008B74;
 }
 
 .product-card{
-    background-color: #FFFFFF;
-    text-align: center;
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
 }
 
 .product-card-heading{
     font-size: 24px;
+    color: #FFFFFF;
 }
 .product-card-para{
     font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    color: #FFFFFF;
 }
 .product-image{
-    height: 100px;
-    width: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
+.product-card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position : absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    
+}
+.product-card:hover .product-card-body{
+    right: 0;
+}
+
 /* product Engineering Services */
 
 /* product Engineering Why choose */
-.whyUs-product-card{
-    background-color: #FFFFFF;
-    border: 1px solid;
-    border-color: darkgrey;
-    border-radius: 10px;
-}
-.bg-product-whychoose{
-    background-color: #FFFFFF;
 
+.bg-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFFFFF;
 }
-.bg-product-whychoose-heading{
-    font-size: 35px;
+.product-container{
+    position: relative;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.whyUs-product-card-heading{
-    font-size: 25px;
+.product-whyUs-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    
 }
-.whyUs-product-card-para{
-    font-size: 16px;
+.product-whyUs-card:nth-child(even){
+    flex-direction: column-reverse;
 }
-.whyUs-product-image{
-    height: 150px;
-    width: 200px;
+.product-whyUs-img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
 }
-/* product Engineering why chhose */
+.product-whyUs-card img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-whyUs-content{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-whyUs-content div{
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 1000px){
+    .product-container{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin: 50px;
+    }
+    .product-whyUs-card{
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    .product-whyUs-card:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    .product-whyUs-img,
+    .product-whyUs-content{
+        width:100%;
+        object-fit: cover;
+    }
+}
+@media (max-width: 600px){
+    .product-whyUs-card{
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .product-whyUs-card:nth-child(even){
+        flex-direction: column;
+    }
+    .product-whyUs-img,
+    .product-whyUs-content{
+        width: 100%;
+    }
+    .product-whyUs-content{
+        height: 200px;
+    }
+}
+/* why choose Product ENG services */
 
 /*Product Engineering */
 
 /*cloud and deveOps */
+
 /*About cloud and deveops */
 
 .bg-sub-cloud-devops{
@@ -505,72 +739,71 @@ button.main-button:active {
 
 /*cloud services */
 
+.bg-container-cloud-services {
+    background-color: #ffffff;
 
-.bg-cloud-services{
-    background-color: #FFFFFF;
+    background-size: cover;
 }
-.cloud-services-para{
-    font-size: 35px;
-}
-.cloud-services-heading{
+.cloud-services-main-heading{
     font-size: 40px;
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
 }
 
-.cloud-card{
-    background-color: #FFFFFF;
-    text-align: center;
-    border: 1px solid;
-    border-color: darkgrey;
-    border-radius: 10px;
+.cloud-services-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    
 }
 
-.cloud-card-heading{
-    font-size: 24px;
+.cloud-services-heading {
+    color: #1f2933;
+    font-size: 25px;
+    font-weight: bold;
 }
-.cloud-card-para{
+
+.cloud-services-paragraph {
+    color: #7b8794;
     font-size: 16px;
+    font-weight: 600;
 }
-.cloud-image{
-    height: 100px;
-    width: 150px;
-}
-/*cloud services*/
+
+/* cloud services */
+
 
 /*devop services */
+.bg-container-devlop-services {
+    background-color: #ffffff;
 
-
-.bg-devop-services{
-    background-color: #FFFFFF;
+    background-size: cover;
 }
-.devop-services-para{
-    font-size: 35px;
-}
-.devop-services-heading{
+.devlop-services-main-heading{
     font-size: 40px;
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
 }
 
-.devop-card{
-    background-color: #FFFFFF;
-    text-align: center;
-    border: 1px solid;
-    border-color: darkgrey;
-    border-radius: 10px;
+.devlop-services-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    
 }
 
-.devop-card-heading{
-    font-size: 24px;
+.devlop-services-heading {
+    color: #1f2933;
+    font-size: 25px;
+    font-weight: bold;
 }
-.devop-card-para{
+
+.devlop-services-paragraph {
+    color: #7b8794;
     font-size: 16px;
+    font-weight: 600;
 }
-.devop-card-image{
-    height: 100px;
-    width: 150px;
-}
+
+
 /*devop services */
 
 /*cloud and deveops */
@@ -661,6 +894,60 @@ button.main-button:active {
     width: 150px;
 }
 /* our staff */
+.bg-staff-services{
+    background-color: #FFFFFF;
+}
+.bg-staff-services-heading{
+    font-size: 40px;
+    color: #e7a324;
+    text-shadow: 2px 2px 0 #008B74;
+}
+
+.staff-card{
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    position: relative;
+}
+
+.staff-card-heading{
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.staff-card-para{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.staff-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.staff-card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position : absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+    
+}
+.staff-card:hover .staff-card-body{
+    right: 0;
+}
 
 /* technology staffing */
 
@@ -718,37 +1005,36 @@ button.main-button:active {
 
 /*salesforce*/
 
-.bg-salesforce{
-    background-color: #FFFFFF;
+.bg-container-salesforce-services {
+    background-color: #ffffff;
+
+    background-size: cover;
 }
-.salesforce-para{
-    font-size: 20px;
-}
-.salesforce-para1{
-    font-size: 35px;
-}
-.salesforce-heading{
+.salesforce-services-main-heading{
     font-size: 40px;
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
 }
 
-.salesforce-card{
-    background-color: #FFFFFF;
-    text-align: center;
-
+.salesforce-services-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    
 }
 
-.salesforce-card-heading{
-    font-size: 24px;
+.salesforce-services-heading {
+    color: #1f2933;
+    font-size: 25px;
+    font-weight: bold;
 }
-.salesforce-card-para{
+
+.salesforce-services-paragraph {
+    color: #7b8794;
     font-size: 16px;
+    font-weight: 600;
 }
-.salesforce-card-image{
-    height: 100px;
-    width: 150px;
-}
+
 /*salesforce*/
 
 /* Dynamics */
@@ -904,6 +1190,15 @@ button.main-button:active {
 }
 
 
+.btn-ref{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.btn-ref:hover{
+    color: #a1db0d;
+    text-decoration: none;
+}
 
 
 .wrapper-full {
