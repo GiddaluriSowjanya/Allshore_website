@@ -24,7 +24,7 @@
 <body>
     <!--navbar section-->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="padding: 0;">
             <div class="container">
                 <h1>
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -72,46 +72,80 @@
 
     <!--contact us banner-->
     <div class="bg-banner-services-section d-flex flex-column justify-content-center">
-        <h1 class="bg-banner-services-section-heading"><a class="services-achor" href="index.html">Home</a> > <a href="contact.html" class="services-achor">Contact Us</a></h1>
+        <div class="container">
+            <h1 class="bg-banner-services-section-heading"><a class="services-achor" href="index.html">Home</a> > <a href="contact.html" class="services-achor">Contact Us</a></h1>
+        </div>
     </div>
     <!--contact us banner-->
 
     <!-- contact -->
-    <div class="bg-contacts py-5">
-        <div class="contact-top py-md-5 py-4">
-            <div class="container">
-                <div class="text-center mb-lg-5 mb-4">
-                    <h3 class="title-style">Contact Us</h3>
+    <div class="bg-contactUs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mt-5">
+                    <h1 class="contactUs-heading">Contact Us</h1>
                 </div>
-                <div>
-                    <form  method="post" class="main-input">
-                        <div class="top-inputs d-grid">
-                            <input type="text" placeholder="Name" name="Name" id="Name" required="">
-                            <input type="email" name="email" placeholder="Email" id="Sender" required="">
+                <div class="row">
+                    <div class="col-md-6 col-12 mt-5 mb-5">
+                        <div class="content-box">
+                            <div class="contactUs-box d-flex flex-row">
+                                <div class="contactUs-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contactUs-text ml-2">
+                                    <h1>Address</h1>
+                                    <p>85 Swanson Rd, Suite 320E,
+                                        Boxborough, MA 01719,USA.</p>
+                                </div>
+                            </div>
+                            <div class="contactUs-box d-flex flex-row">
+                                <div class="contactUs-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contactUs-text ml-2">
+                                    <h1>Address</h1>
+                                    <p>505, 5th Floor, Gowra Palladium,
+                                        Raidurg, Hyderabad, Telangana,500081 India</p>
+                                </div>
+                            </div>
+                            <div class="contactUs-box d-flex flex-row">
+                                <div class="contactUs-icon">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div class="contactUs-text ml-2">
+                                    <h1>Phone</h1>
+                                    <p>+91 81210 16282</p>
+                                </div>
+                            </div>
+                            <div class="contactUs-box d-flex flex-row">
+                                <div class="contactUs-icon">
+                                    <i class="bi bi-envelope-open-fill"></i>
+                                </div>
+                                <div class="contactUs-text ml-2">
+                                    <h1>Email</h1>
+                                    <p> recruit@allshoretech.com</p>
+                                </div>
+                            </div>
                         </div>
-                        <input type="text" placeholder="Phone Number" name="Name" id="Name" required="">
-                        <textarea placeholder="Message" name="Message" id="Message" required=""></textarea>
-                        
-                        <button class="m-2 allshore-btn"><a href="index.html" class="btn-ref">SUMBIT</a></button>
-                    </form>
-                </div>
-                <div class="wrapper-full">
-                    <div class="line"></div>
-                    <h3 class="title-style text-center mb-4">Contact Info</h3>
-                    <div class="contact">
-                        <div class="row">
-                            <p class="contact-text-sub col-md-3 col-12"><i class="bi bi-geo-alt-fill"></i> 85 Swanson Rd, Suite 320E,<br/>
-                                                            Boxborough, MA 01719, USA</p>
-                            <p class="contact-text-sub col-md-3 col-12"><i class="bi bi-geo-alt-fill"></i> 505, 5th Floor, Gowra Palladium,<br/>
-                                                        Raidurga, Hyderabad, Telangana, 500081 India</p>
-                            <p class="contact-text-sub col-md-3 col-12"><i class="bi bi-telephone-fill"></i> +91 81210 16282</p>
-                            <p class="contact-text-sub col-md-3 col-12"><i class="bi bi-envelope-open-fill"></i> recruit@allshoretech.com</p>
+                    </div>
+                    <div class="col-md-6 col-12 mt-5 mb-5">
+                        <div class="contacts12-main">
+                            <form  method="post" class="main-input">
+                                <div class="top-inputs d-grid">
+                                    <input type="text" placeholder="Name" name="Name" id="Name" required="">
+                                    <input type="email" name="email" placeholder="Email" id="Sender" required="">
+                                </div>
+                                <input type="text" placeholder="Phone Number" name="Name" id="Name" required="">
+                                <textarea placeholder="Message" name="Message" id="Message" required=""></textarea>
+                                <button class="allshore-btn"><a class="btn-ref" href="about.html">LEARN MORE</a></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <!--contact-->
 
     <!--location section-->

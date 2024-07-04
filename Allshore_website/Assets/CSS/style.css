@@ -401,47 +401,46 @@ a{
 
 /* About Us */
 
-/* About section */
-.about-logo-image{
-    
-    width: 100%;
-    margin-top: 30px;
-    
+/* About Section  */
+
+.bg-aboutUs-section-1{
+    background-color: rgb(243, 96, 70);
+    background-size: cover;
 }
-
-.bg-aboutUs{
-    /*background-image: url("../Images/corporate-portrait-office-workers-employees/5471.jpg");*/
-
-    background: linear-gradient(#73f3dd, #ffc75f, rgb(243, 96, 70));
+.bg-aboutUs-section-2{
+    background-color: #ffc75f;
+}
+.bg-aboutUs-section-3{
+    background-color: #73f3dd;
+}
+.bg-aboutUs-image{
+    height: 300px;
     width: 100%;
     background-size: cover;
 }
-/*.bg-aboutUs-overlay{
-    background: rgba(249, 248, 248, 0.548);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}*/
-.aboutUs-heading{
+.bg-aboutUs-content-heading{
     font-size: 40px;
     color: #e7a324;
     margin-top: 30px;
     text-shadow: 2px 2px 0 #008B74;
-    margin-top: 80px;
 }
-.aboutUs-heading2{
-    font-size: 45px;
+.bg-aboutUs-content-heading-2{
+    font-size: 40px;
+    color: #008B74;
+    margin-top: 30px;
+    text-shadow: 2px 2px 0 rgb(243, 96, 70);
 }
-.aboutUs-card-para{
-    font-size: 18px;
+.bg-aboutUs-content-heading-3{
+    font-size: 40px;
+    color: rgb(243, 96, 70);
+    margin-top: 30px;
+    text-shadow: 2px 2px 0 #e7a324;
+}
+.bg-aboutUs-content-para{
     color: #FFFFFF;
-    border-radius: 20px;
+    font-size: 16px;
 }
 /* About Section */
-
 
 /*Engagement section */
 
@@ -597,45 +596,48 @@ a{
 /* About Product Engineering */
 
 /* product Engineering services */
-.bg-product-services{
+.bg-product-services {
     background-color: #FFFFFF;
+    padding: 20px 0; /* Added padding for some spacing */
 }
-.bg-product-services-heading{
-    font-size: 32px; 
+
+.bg-product-services-heading {
+    font-size: 40px; 
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
 }
 
-.product-card{
+.product-card {
     width: 100%; 
     max-width: 320px; 
     height: auto; 
     border-radius: 20px;
     overflow: hidden;
-    border: 8px solid #fff;
     position: relative;
-    margin: 0 auto; 
-
+    margin: 20px; /* Adjusted margin to allow spacing between cards */
 }
 
-.product-card-heading{
+.product-card-heading {
     font-size: 20px; 
     color: #FFFFFF;
 }
-.product-card-para{
+
+.product-card-para {
     font-size: 14px; 
     line-height: 22px;
     margin: 20px 0; 
     font-weight: 400;
     color: #FFFFFF;
 }
-.product-image{
+
+.product-images {
     width: 100%;
     height: auto; 
     object-fit: cover;
     border-radius: 15px;
 }
-.product-card-body{
+
+.product-card-body {
     width: 100%;
     height: 100%;
     top: 0;
@@ -650,10 +652,17 @@ a{
     justify-content: center;
     transition: 2s;
 }
-.product-card:hover .product-card-body{
+
+.product-card:hover .product-card-body {
     right: 0;
 }
 
+.centered-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
 @media (max-width: 576px) {
     .bg-product-services-heading {
@@ -1034,12 +1043,13 @@ a{
 }
 
 .staff-card{
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    border: 8px solid #fff;
     position: relative;
+    margin: 0 auto;
 }
 
 .staff-card-heading{
@@ -1230,6 +1240,37 @@ a{
 }
 
 /* About digital transformation */
+/* services of Digital transformation */
+.bg-container-digital-services {
+    background-color: #ffffff;
+
+    background-size: cover;
+}
+.digital-services-main-heading{
+    font-size: 40px;
+    color: #e7a324;
+    text-shadow: 2px 2px 0 #008B74;
+}
+
+.digital-services-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    
+}
+
+.digital-services-heading {
+    color: #1f2933;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.digital-services-paragraph {
+    color: #7b8794;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* srvices of digital transformation */
 
 /* Digital Transformation */
 
@@ -1269,27 +1310,54 @@ a{
     margin-right: 20px;
     
 }
+/*current openings */
+.table-heading{
+    color: #ec5555;
+    font-size: 25px;
+    font-weight: 600;
+}
+.modal-span{
+    font-weight: bold;
+}
+.modal-para{
+    font-weight: normal;
+}
+.job-link{
+    color: #2c7bfe;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* current openings */
 /* Careers */
 
 /* contact Us */
 /* contact section*/
-.bg-contacts {
-    background: #fff;
-
+.bg-contactUs {
+    background-color: #FFFFFF;
 }
 
-.contact-top {
-    text-align: center;
+.content-box{
+    width: 100%;
 }
-
-
-.title-style{
+.contactUs-heading{
     font-size: 40px;
     color: #e7a324;
     text-shadow: 2px 2px 0 #008B74;
-    margin-bottom: 20px;
 }
-
+.contactUs-icon {
+    font-size: 20px;
+}
+.contactUs-text {
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+    
+}
+.contactUs-text h1 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #00bcd4;
+}
 
 .main-input {
     max-width: 600px;
@@ -1316,63 +1384,22 @@ a{
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-
-
 .btn-ref{
     color: #FFFFFF;
-    text-decoration: none;
 }
-
-.btn-ref:hover{
+.allshore-btn:hover a{
     color: #FFFFFF;
-    text-decoration: none;
+}
+.contactUs-text h1 {
+    font-weight: 500;
+    color: #00bcd4;
 }
 
 
-.wrapper-full {
-    text-align: center;
-    margin-top: 2rem;
-}
 
-.line {
-    width: 100%;
-    height: 1px;
-    background: #ddd;
-    margin: 2rem 0;
-}
 
-.contact-info {
-    text-align: center;
-}
 
-.contact-text-sub {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
 
-.buttons-teams a {
-    display: inline-block;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    color: #666;
-    transition: color 0.3s ease;
-}
-
-.buttons-teams a:hover {
-    color: #ff9800;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-    .top-inputs {
-        grid-template-columns: 1fr;
-    }
-
-    .main-input {
-        padding: 1.5rem;
-    }
-}
 /* contact section */
 
 /*location section */
